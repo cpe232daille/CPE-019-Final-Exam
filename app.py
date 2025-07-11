@@ -30,6 +30,8 @@ if uploaded_file is not None:
     # Make prediction
     prediction = model.predict(img_array)
     predicted_class = np.argmax(prediction)
-
     # Show prediction
     st.success(f"Predicted Digit: **{predicted_class}**")
+    # Show prediction percentage
+    prediction_percentage = prediction[0][predicted_class] * 100
+    st.info(f"Confidence: **{prediction_percentage:.2f}%**")
