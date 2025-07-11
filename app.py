@@ -4,8 +4,8 @@ import tensorflow as tf
 from PIL import Image
 
 # Set up the Streamlit page
-st.set_page_config(page_title="Digit Classifier", layout="centered")
-st.title("Digit Classifier - Deep Learning Model Deployment")
+st.set_page_config(page_title="Single Digit Classifier", layout="centered")
+st.title("Single Digit Classifier")
 
 # Load the trained model
 @st.cache_resource
