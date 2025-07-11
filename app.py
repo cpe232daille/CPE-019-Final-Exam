@@ -34,4 +34,4 @@ if uploaded_file is not None:
     st.success(f"Predicted Digit: **{predicted_class}**")
     # Show prediction percentage
     prediction_percentage = prediction[0][predicted_class] * 100
-    st.info(f"Confidence: **{prediction_percentage:.2f}%**")
+    st.info(f"Accuracy: **{prediction_percentage:.2f}%**")
