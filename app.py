@@ -15,7 +15,7 @@ def load_model():
 model = load_model()
 
 # Upload image
-uploaded_file = st.file_uploader("Please Upload a 28x28 grayscale SINGLE digit image", type=["jpg", "jpeg", "png"])
+uploaded_file = st.file_uploader("Please upload a 28x28 grayscale SINGLE digit image", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file).convert("L")  # Convert to grayscale
